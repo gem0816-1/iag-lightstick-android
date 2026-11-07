@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "name": "RGB 三色示例",
+  "video_url": "",
+  "duration_ms": 3000,
+  "bpm": 120,
+  "snap_ms": 100,
+  "snap_to_beat": false,
+  "tracks": [
+    { "id": "main", "name": "主轨", "priority": 0, "enabled": true }
+  ],
+  "events": [
+    { "id": "red", "track_id": "main", "start_ms": 0, "duration_ms": 1000, "color": "#FF0000", "effect": "solid", "period_ms": 1000 },
+    { "id": "green", "track_id": "main", "start_ms": 1000, "duration_ms": 1000, "color": "#00FF00", "effect": "solid", "period_ms": 1000 },
+    { "id": "blue", "track_id": "main", "start_ms": 2000, "duration_ms": 1000, "color": "#0000FF", "effect": "solid", "period_ms": 1000 }
+  ]
+}

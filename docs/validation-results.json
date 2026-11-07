@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-07",
+  "variant": "public source snapshot based on v0.9.21/code31",
+  "build": "BUILD SUCCESSFUL in 2m 28s; 193 actionable tasks: 193 executed",
+  "tests": {
+    "app": {
+      "tests": 72,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "ampp-glass": {
+      "tests": 61,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    }
+  },
+  "lint": {
+    "debug": {
+      "warning": 22,
+      "note": 7
+    },
+    "release": {
+      "warning": 22,
+      "note": 7
+    }
+  },
+  "artifacts": [
+    {
+      "path": "apk/debug/app-debug.apk",
+      "bytes": 17971316,
+      "sha256": "51ee4f86f112f022d8476b05e472146affb344e1c3461b88cdda8df8df73c929"
+    },
+    {
+      "path": "apk/release/app-release-unsigned.apk",
+      "bytes": 1726279,
+      "sha256": "e3332e21ecb0341895d9b9addd383228e442efd7bdcae82582ab6bb0a383a1ca"
+    },
+    {
+      "path": "bundle/release/app-release.aab",
+      "bytes": 3728355,
+      "sha256": "c2ab111e7bac33948e5cbf9fb0f829da3dfc73116394169fa36d7adcb3fb29af"
+    }
+  ],
+  "native": [
+    {
+      "path": "base/lib/arm64-v8a/libandroidx.graphics.path.so",
+      "compatible_16k_static": true
+    },
+    {
+      "path": "base/lib/armeabi-v7a/libandroidx.graphics.path.so",
+      "compatible_16k_static": true
+    },
+    {
+      "path": "base/lib/x86/libandroidx.graphics.path.so",
+      "compatible_16k_static": true
+    },
+    {
+      "path": "base/lib/x86_64/libandroidx.graphics.path.so",
+      "compatible_16k_static": true
+    }
+  ],
+  "aab_page_alignment_16k": true,
+  "aab_signature_entries": [],
+  "example_parser_probe": "PASS: real Kotlin parser, 3 events and 0/1000/2000/3000ms boundaries",
+  "device_tests": "未执行：adb devices -l 无在线设备",
+  "play_console": "未执行；正式签名、隐私与外部发布条件仍缺失"
+}

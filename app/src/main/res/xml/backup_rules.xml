@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- API 26-30: preserve user projects/settings, not standalone fingerprints, cache or
+     library version state. Original project JSON may itself contain a reference field. -->
+<full-backup-content>
+    <include domain="file" path="arrangements/" />
+    <include domain="sharedpref" path="glass.xml" />
+</full-backup-content>

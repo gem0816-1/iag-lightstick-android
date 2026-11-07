@@ -1,0 +1,28 @@
+// Uses the bundletool already resolved by AGP; no extra downloaded CLI or signing config.
+// Run from the Android root: gradlew -I tools/play-bundle-check.init.gradle checkPlayBundle
+gradle.projectsEvaluated {
+    def root = gradle.rootProject
+    def app = root.project(':app')
+    def bundle = app.layout.buildDirectory.file('outputs/bundle/release/app-release.aab')
+    def reportDir = app.layout.buildDirectory.dir('reports/play-bundle')
+    ['validatePlayBundle': ['validate'],
+     'dumpPlayManifest': ['dump', 'manifest', '--module=base'],
+     'dumpPlayBundleConfig': ['dump', 'config']].each { taskName, command ->
+        root.tasks.register(taskName, JavaExec) {
+            dependsOn ':app:bundleRelease'
+            classpath = root.buildscript.configurations.classpath
+            mainClass.set('com.android.tools.build.bundletool.BundleToolMain')
+            args(command + ["--bundle=${bundle.get().asFile.absolutePath}"])
+            def output = reportDir.get().file(taskName + '.txt').asFile
+            doFirst {
+                output.parentFile.mkdirs()
+                standardOutput = new FileOutputStream(output)
+            }
+            doLast { standardOutput.close() }
+        }
+    }
+    root.tasks.register('checkPlayBundle') {
+        dependsOn 'validatePlayBundle', 'dumpPlayManifest', 'dumpPlayBundleConfig'
+        description = 'Validate and inspect the local release AAB; does not sign or publish.'
+    }
+}

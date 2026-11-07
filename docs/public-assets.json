@@ -1,0 +1,74 @@
+[
+  {
+    "path": "app/src/main/res/drawable/am_mini_next.xml",
+    "sha256": "a6530a3a72478546804120c0e9dd1628aa86d6958357050d549e5ebd9d3a5079",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_mini_pause.xml",
+    "sha256": "c8e6439c16951b3b2bc1e6793a123927146c538f027923d50abcbeba4d5aad0a",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_mini_play.xml",
+    "sha256": "ce1b2e084022d161ed4494ba91999409141d6120745671c29d3c292f0ca09406",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_player_more.xml",
+    "sha256": "5c68c8f8c896b4751326712af58e55b42486dadc62cd222bf5cc427c9089bb7d",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_player_next.xml",
+    "sha256": "a6530a3a72478546804120c0e9dd1628aa86d6958357050d549e5ebd9d3a5079",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_player_pause.xml",
+    "sha256": "c8e6439c16951b3b2bc1e6793a123927146c538f027923d50abcbeba4d5aad0a",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_player_play.xml",
+    "sha256": "ce1b2e084022d161ed4494ba91999409141d6120745671c29d3c292f0ca09406",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable/am_player_previous.xml",
+    "sha256": "ffb7520a78376f5535aab9e2da5ab172a9ed2eaf4fc222567f96724a71346047",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable-nodpi/iag_app_icon_source.png",
+    "sha256": "5b2d7597b367bf9d0f9335c18bd80ea9011a0cbc5ed69d0b8f976556e1419cbb",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable-nodpi/iag_color_wheel.png",
+    "sha256": "b13ad76438ca598078a8137d8d094f882aac02b6f3ff56dc278b680eaa4fbd19",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable-nodpi/ic_launcher_foreground.png",
+    "sha256": "437eff5ad58ef46cf8b1272ac9a27314630428adc227f0d3f909b04abf2d9e26",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  },
+  {
+    "path": "app/src/main/res/drawable-nodpi/yingyuanbang.png",
+    "sha256": "3d53deef37bed8b22219def820be6df732808c16b4b9c02ada368aacb66d426c",
+    "source": "tools/generate_public_assets.py",
+    "license": "GPL-3.0-only"
+  }
+]

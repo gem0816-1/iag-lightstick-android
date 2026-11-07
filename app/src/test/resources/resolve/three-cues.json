@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "fps": {
+    "numerator": 30,
+    "denominator": 1
+  },
+  "start_frame": 108000,
+  "timecode_start": "01:00:00:00",
+  "timeline_name": "IAG native timeline example",
+  "duration_frames": 450,
+  "cues": [
+    {
+      "start_frame": 0,
+      "end_frame": 150,
+      "mode": "solid",
+      "color": "#0066FF",
+      "brightness": 100
+    },
+    {
+      "start_frame": 150,
+      "end_frame": 300,
+      "mode": "breathing",
+      "color": "#AA55FF",
+      "brightness": 100,
+      "speed": 5
+    },
+    {
+      "start_frame": 300,
+      "end_frame": 450,
+      "mode": "fast_flash",
+      "color": "#FF0055",
+      "brightness": 100,
+      "speed": 6
+    }
+  ]
+}

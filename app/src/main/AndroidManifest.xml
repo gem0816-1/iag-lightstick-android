@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 旧版蓝牙权限 (Android 11 及以下) -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH"
+        android:maxSdkVersion="30" />
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_ADMIN"
+        android:maxSdkVersion="30" />
+    <!-- Android 12+ 蓝牙权限 -->
+    <uses-permission
+        android:name="android.permission.BLUETOOTH_SCAN"
+        android:usesPermissionFlags="neverForLocation" />
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <!-- Android 11 及以下扫描需要定位权限 -->
+    <uses-permission
+        android:name="android.permission.ACCESS_FINE_LOCATION"
+        android:maxSdkVersion="30" />
+    <!-- Android AudioPlaybackCapture 的系统要求；音源通过播放捕获配置，不使用麦克风输入 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_CONNECTED_DEVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PROJECTION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <!-- RECORD_AUDIO is required for playback capture, not for a physical microphone. -->
+    <uses-feature
+        android:name="android.hardware.microphone"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_rules"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:usesCleartextTraffic="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="IAG Light Stick"
+        android:resizeableActivity="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.IAG">
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTop"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="text/json" />
+                <data android:mimeType="application/vnd.iag.cues+json" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="content" />
+                <data android:mimeType="application/json" />
+                <data android:mimeType="text/json" />
+                <data android:mimeType="application/vnd.iag.cues+json" />
+            </intent-filter>
+        </activity>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.arrangements"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/shared_arrangements" />
+        </provider>
+        <service
+            android:name=".CaptureService"
+            android:exported="false"
+            android:foregroundServiceType="mediaProjection" />
+        <service
+            android:name=".ArrangementPlaybackService"
+            android:exported="false"
+            android:foregroundServiceType="connectedDevice" />
+    </application>
+</manifest>

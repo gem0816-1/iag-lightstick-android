@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Standalone ref_*.bin files and library.xml are intentionally outside the allowlist.
+     Keep embedded reference fields in project JSON intact for desktop interoperability. -->
+<data-extraction-rules>
+    <cloud-backup disableIfNoEncryptionCapabilities="true">
+        <include domain="file" path="arrangements/" />
+        <include domain="sharedpref" path="glass.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="file" path="arrangements/" />
+        <include domain="sharedpref" path="glass.xml" />
+    </device-transfer>
+</data-extraction-rules>

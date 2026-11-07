@@ -1,0 +1,355 @@
+{
+  "sourceCommit": "86762b5",
+  "sources": [
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/Backdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/Backdrop.kt",
+      "sha256": "3ae69a98d3a4fce81e57e64b284ed42ee6b41b0fd18f293644728df5a533c484",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/BackdropEffectScope.kt",
+      "target": "src/main/java/com/kyant/backdrop/BackdropEffectScope.kt",
+      "sha256": "067d4370a895922c4551060955b2b11660eeed509a26383c87c0312fd881f936",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/DrawBackdropModifier.kt",
+      "target": "src/main/java/com/kyant/backdrop/DrawBackdropModifier.kt",
+      "sha256": "899aacc5843e37c88493b7dfce8c03abbf6e1bdbf7fb7c27a374f239b991d449",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/RuntimeShader.kt",
+      "target": "src/main/java/com/kyant/backdrop/RuntimeShaderContract.kt",
+      "sha256": "58ab3566033796d9c6d4ad2977ee35707d8325c4c77f023f994ac9170866d806",
+      "adaptation": "Android-only: retain shader interface; platform functions are supplied by Android implementation."
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/RuntimeShaderCache.kt",
+      "target": "src/main/java/com/kyant/backdrop/RuntimeShaderCache.kt",
+      "sha256": "720e01cd045c971940a6b07ab35eda58d548a15e2129efa6f824555edeee75f8",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/Backdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/Backdrop.kt",
+      "sha256": "724b9810fd4c37737eed17aef7d0ffadeedb5b4ecc1cd9521169de52025df3c7",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/CanvasBackdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/CanvasBackdrop.kt",
+      "sha256": "0d88198bcd204a794cb0f476ddc0fab17203948621e691212654dedf4f0e1f66",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/CombinedBackdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/CombinedBackdrop.kt",
+      "sha256": "1d9dee52a6568a562bec2a6ff9144debd6d816f5b886d6d7823621838230a0f1",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/EmptyBackdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/EmptyBackdrop.kt",
+      "sha256": "59b7a40f6c30eda542b7bcf806b56e2830c024dfae00893e78ceed95b19b8187",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/LayerBackdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/LayerBackdrop.kt",
+      "sha256": "8fde9b3202a51578ed41a3244a8f736795f2929111762075135032b9df229b4b",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/backdrops/LayerBackdropModifier.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/LayerBackdropModifier.kt",
+      "sha256": "c1fe39b467dfb25320b82ed3e7c3f5444f31d263e21495486d08a1f86ee0a378",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/effects/Blur.kt",
+      "target": "src/main/java/com/kyant/backdrop/effects/Blur.kt",
+      "sha256": "fd6757657f6424d625c8e0f49f29a390de54a6ee80675ce8b51290965843ede0",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/effects/ColorFilter.kt",
+      "target": "src/main/java/com/kyant/backdrop/effects/ColorFilter.kt",
+      "sha256": "d098304609ebaa682e36fe1a268a6cdd19dfe24a1aab766ef152e4f877c7ec55",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/effects/Lens.kt",
+      "target": "src/main/java/com/kyant/backdrop/effects/Lens.kt",
+      "sha256": "28e2a61c6f994d6ef793e4bea5e97b95d712a6d8536e35bd98634ad9999027dd",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/effects/RenderEffect.kt",
+      "target": "src/main/java/com/kyant/backdrop/effects/RenderEffect.kt",
+      "sha256": "2c05c9b7b5a96c9f6aa299333830626ff29ad7a18dffe9f99c0969364efbd844",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/highlight/Highlight.kt",
+      "target": "src/main/java/com/kyant/backdrop/highlight/Highlight.kt",
+      "sha256": "eaf687a1888783f2d93988a6298f0b544add4d8577dfdc0cfd10b85824ac483c",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/highlight/HighlightModifier.kt",
+      "target": "src/main/java/com/kyant/backdrop/highlight/HighlightModifier.kt",
+      "sha256": "5ff2a37efc63e90040676f5aece9d9c428c6c95ee115dacbf45d0a17bdb00453",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/highlight/HighlightStyle.kt",
+      "target": "src/main/java/com/kyant/backdrop/highlight/HighlightStyle.kt",
+      "sha256": "e33d709eddb92848caaac16aadb768d9d260e43a09adc719d64d44e62417dfa9",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/internal/InverseLayerScope.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/InverseLayerScope.kt",
+      "sha256": "016dbe2c1f19aed5ae6034da180f3e304d8f532652ad355a3e1095074e22edf5",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/internal/LayerRecorder.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/LayerRecorder.kt",
+      "sha256": "3de57c57f13af928b2f18a42ac617bf1e80160cea8769fa4f130cf217abda3ce",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/internal/Outline.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/Outline.kt",
+      "sha256": "ed6099c36ee5c18bd33717ea04196bd474735f09ac4c9b0dd169b771cf27f34a",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/internal/Shaders.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/Shaders.kt",
+      "sha256": "084bd94af25ba523c4345d18dec79868a357146b87ce5d6b8edc279eef737171",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/internal/ShapeProvider.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/ShapeProvider.kt",
+      "sha256": "82074d9c7f597affd71422e70bf5bbf2f0a00d7d6ebbbe0438e2084634b52f1b",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/shadow/InnerShadow.kt",
+      "target": "src/main/java/com/kyant/backdrop/shadow/InnerShadow.kt",
+      "sha256": "c710c3e2728462c2f5241db7b61598a8df291d7fa5f4a84a5cf05cf5e9b37bfa",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/shadow/InnerShadowModifier.kt",
+      "target": "src/main/java/com/kyant/backdrop/shadow/InnerShadowModifier.kt",
+      "sha256": "1475b7b942ce0d173ef438fc2338c20b700308764fefb3acc2b63ff622a550ca",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/shadow/Shadow.kt",
+      "target": "src/main/java/com/kyant/backdrop/shadow/Shadow.kt",
+      "sha256": "26595a8f1719a65449a927566a7c97c746928d82f87c7669bd60233e0dd1f3ec",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/com/kyant/backdrop/shadow/ShadowModifier.kt",
+      "target": "src/main/java/com/kyant/backdrop/shadow/ShadowModifier.kt",
+      "sha256": "3b6193c2992ada11c02456be4aabb1878f68c08d7a81ef9cf8b8547a05338d3d",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/commonMain/kotlin/dev/amenhancer/backdrop/VibrantBlur.kt",
+      "target": "src/main/java/dev/amenhancer/backdrop/VibrantBlur.kt",
+      "sha256": "3985902f5145602d8d7ecb3a0c09b2ff6bc2f2674295e3d7111c96bacb619ff8",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/com/kyant/backdrop/Platform.kt",
+      "target": "src/main/java/com/kyant/backdrop/Platform.kt",
+      "sha256": "77874e828c90c0968abcfbf799a63767f1f914bd0bb9eef112d919fb7b31ae14",
+      "adaptation": "Android-only: remove actual keywords; retain declared common default argument where applicable."
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/com/kyant/backdrop/RuntimeShader.kt",
+      "target": "src/main/java/com/kyant/backdrop/RuntimeShader.kt",
+      "sha256": "299d7944336462a6802a3e0f1fe079d2fb1e6b2a16fc7879a975bb42603d56fb",
+      "adaptation": "Android-only: remove actual keywords; retain declared common default argument where applicable."
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/com/kyant/backdrop/backdrops/ViewBackdrop.kt",
+      "target": "src/main/java/com/kyant/backdrop/backdrops/ViewBackdrop.kt",
+      "sha256": "24bed9abb9191c9cf7b45b853d3fbb0c7530af44fd5a92bec37d063339212da9",
+      "adaptation": null
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/com/kyant/backdrop/internal/Paint.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/Paint.kt",
+      "sha256": "73cd57d35c204e12adad2ca5b85c63d88432e5bc6839f7f8a9d7a76848eee0d9",
+      "adaptation": "Android-only: remove actual keywords; retain declared common default argument where applicable."
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/com/kyant/backdrop/internal/RenderEffect.kt",
+      "target": "src/main/java/com/kyant/backdrop/internal/RenderEffect.kt",
+      "sha256": "21cafa905b87116847564c0276dacbd48cba5bf6f1e1029f1ead53f1c47b59a3",
+      "adaptation": "Android-only: remove actual keywords; retain declared common default argument where applicable."
+    },
+    {
+      "source": "backdrop/src/androidMain/kotlin/dev/amenhancer/backdrop/BackdropTracing.android.kt",
+      "target": "src/main/java/dev/amenhancer/backdrop/BackdropTracing.kt",
+      "sha256": "12c1275bd4ef7645ef7a99fd64b0c04a3533ecc22baa7283e35c659c7799c3b3",
+      "adaptation": "Android-only: merge common inline trace scope and Android implementation; remove expect/actual keywords."
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/components/LiquidBottomTab.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/components/LiquidBottomTab.kt",
+      "sha256": "c97c13e906484fac511f7274c10ad2cd8b43786138af06fdbef15aae480017eb",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/components/LiquidBottomTabs.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/components/LiquidBottomTabs.kt",
+      "sha256": "98305f086e72f59e4e48f1ae4299385187e2f45b5d82b51b718ebc9444ad0fd1",
+      "adaptation": " IAG v0.9.18: shared LiquidMotion roles and cancellation/idle cleanup; numerical parameters are not recovered Coolapk values."
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/components/LiquidButton.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/components/LiquidButton.kt",
+      "sha256": "7b95a0c1b33ff984f59b1e7c7a910b7038a0a8ad4377a2fdbe77400711a8244b",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/utils/Coroutines.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/utils/Coroutines.kt",
+      "sha256": "0e5528014115112fd77c4ff26a77614408c3f5e78090aa1e1ab3dbdbf174c36b",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/utils/DampedDragAnimation.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/utils/DampedDragAnimation.kt",
+      "sha256": "514666e8d901c4fbdd1943c1a4373614c0be3c2f71e59977b8d3f7adbd5cd830",
+      "adaptation": " IAG v0.9.18: shared LiquidMotion roles and cancellation/idle cleanup; numerical parameters are not recovered Coolapk values."
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/utils/DragGestureInspector.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/utils/DragGestureInspector.kt",
+      "sha256": "01548ab5604d89bd9a8ee66a69d716036e94559c842461fbee4afc97915770c1",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/com/kyant/backdrop/catalog/utils/InteractiveHighlight.kt",
+      "target": "src/main/java/com/kyant/backdrop/catalog/utils/InteractiveHighlight.kt",
+      "sha256": "5f421904d1996808b2856fb489b56e167e80db77d8379bee60d5f90cdc1364e8",
+      "adaptation": " IAG v0.9.18: shared LiquidMotion roles and cancellation/idle cleanup; numerical parameters are not recovered Coolapk values."
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassPolicy.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassPolicy.kt",
+      "sha256": "b5acb9b25dce0c353e49e238e487cef2eed70974bcbf370008c0c16f4c8b9617",
+      "adaptation": "Remove AM++ host-core dependency; inline its unchanged GLASS_BOTTOM_DP=16 and GLASS_PANEL_BLUR_DP=4f defaults."
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassBarCollapse.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassBarCollapse.kt",
+      "sha256": "c41d1bb7820fb2166465c22ede8106086b122a29e0b2ec8287b90d80d6dae75c",
+      "adaptation": " IAG v0.9.18: shared LiquidMotion roles and cancellation/idle cleanup; numerical parameters are not recovered Coolapk values."
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassBarCollapseLayout.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassBarCollapseLayout.kt",
+      "sha256": "d37ee42d58b1a7f1f9d730c93b39302a9afcd0cd93abf9bad4d67077561cf9ba",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassCollapseModifiers.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassCollapseModifiers.kt",
+      "sha256": "455e5a768bc48867f6ae5ab1e9814c38686873783c0c6229bdb2ea61f7e2c29b",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassCollapseShapes.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassCollapseShapes.kt",
+      "sha256": "20791e42acfb666693081fb576b6cf9bac4266fc7a921937a4ac10661ac05a25",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassTabGeometry.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassTabGeometry.kt",
+      "sha256": "2f71aae57dbf5b07f38c2bd9ffa95f25bcf2e9ac584936adad2ec194652a78ab",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassPressGeometry.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassPressGeometry.kt",
+      "sha256": "9bd90d85f4c180fb656efe58f1d5136508e6694dbde24f5e25909d8a8ac2a70b",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/NativeLiquidButton.kt",
+      "target": "src/main/java/dev/amenhancer/glass/NativeLiquidButton.kt",
+      "sha256": "2956a81b6cecf3ea219eaf6bc456eb9c93c2158aa0b3d693de9d551a1ed74410",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/BottomScrim.kt",
+      "target": "src/main/java/dev/amenhancer/glass/BottomScrim.kt",
+      "sha256": "cacce0bde521e9135e7596d06bc1be2800f66d6fa039613e326df07bb02b4d4d",
+      "adaptation": "IAG v0.9.12: remember identical smoothstep brushes, layer Paint and VibrantBlur prefix to avoid per-draw allocation; shader, mask, radius and color unchanged.",
+      "sourceSha256": "ef352fb61897a463017b1a4af622b1d1a7b6fa783b16ef47ad34e03a0f9b6841"
+    },
+    {
+      "source": "glass/src/test/kotlin/dev/amenhancer/glass/GlassGeometryTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassGeometryTest.kt",
+      "sha256": "c77f21e2bdcdf9dbd3d18cb8e809552aa512d604de51269c1d7c65b4c4c52c83",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/test/kotlin/dev/amenhancer/glass/GlassTabGeometryTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassTabGeometryTest.kt",
+      "sha256": "eb7f3fda385910b0c8c5ebfd7250413548bae9f75d4e137a9e22e0fea35f9d96",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/test/kotlin/dev/amenhancer/glass/GlassPressGeometryTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassPressGeometryTest.kt",
+      "sha256": "ecd87b18942603cb3b306a9bd15617eac711d4223a63ec81af0190a7c9c706b1",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/test/kotlin/dev/amenhancer/glass/GlassPolicyTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassPolicyTest.kt",
+      "sha256": "36b529c3f0d52d2ddd3c340e59025e11173cb464b51da656ce764ab55f135ea1",
+      "adaptation": null
+    },
+    {
+      "source": "glass/src/test/kotlin/dev/amenhancer/glass/GlassBarCollapsePolicyTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassBarCollapsePolicyTest.kt",
+      "sha256": "4aefc3c98a11ed39edc013bd90318c1ab15de8c82ff682927d4b1a801a1d4b49",
+      "adaptation": null
+    },
+    {
+      "source": "app/src/main/java/dev/amenhancer/module/hook/GlassScrollCollapse.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassScrollCollapse.kt",
+      "sha256": "052f2e91816711d2b1cbb2a00335b62303983369acb0677f64c5118804d6193b",
+      "adaptation": "Move package to dev.amenhancer.glass and expose accumulator as public for app-owned scroll input; algorithm unchanged."
+    },
+    {
+      "source": "app/src/test/java/dev/amenhancer/module/hook/GlassScrollCollapseTest.kt",
+      "target": "src/test/java/dev/amenhancer/glass/GlassScrollCollapseTest.kt",
+      "sha256": "4709cb7acaa05e31d1b335e89acbc1b2b5043fe8a9e075ad4bcb704b822dee85",
+      "adaptation": "Move package to dev.amenhancer.glass; original 8 regression tests unchanged."
+    },
+    {
+      "source": "glass/src/main/kotlin/dev/amenhancer/glass/GlassNavigation.kt",
+      "target": "src/main/java/dev/amenhancer/glass/GlassNavigation.kt",
+      "sha256": "7d5ca371a6ed3d40cc6b21203952dd44763d5b9ab8bd0a0eeaa6a7dff7f360ac",
+      "adaptation": "IAG Compose host: Drawable icon parameters and paint calls use ImageVector/Image. Original label reuse, gestures, geometry, collapse and material are retained.; compact selected glyph exposes its existing tab title to accessibility (2026-10-30)",
+      "sourceSha256": "369795e4ed9f347a366bedaf416c88eea7cda5489684914d11b4d4e98135979e"
+    }
+  ]
+}

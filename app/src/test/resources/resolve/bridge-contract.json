@@ -1,0 +1,466 @@
+[
+  {
+    "sheet": {
+      "version": 1,
+      "fps": {
+        "numerator": 30,
+        "denominator": 1
+      },
+      "start_frame": 108000,
+      "timecode_start": "01:00:00:00",
+      "timeline_name": "IAG native timeline example",
+      "duration_frames": 450,
+      "cues": [
+        {
+          "start_frame": 0,
+          "end_frame": 150,
+          "mode": "solid",
+          "color": "#0066FF",
+          "brightness": 100
+        },
+        {
+          "start_frame": 150,
+          "end_frame": 300,
+          "mode": "breathing",
+          "color": "#AA55FF",
+          "brightness": 100,
+          "speed": 5
+        },
+        {
+          "start_frame": 300,
+          "end_frame": 450,
+          "mode": "fast_flash",
+          "color": "#FF0055",
+          "brightness": 100,
+          "speed": 6
+        }
+      ]
+    },
+    "expected": [
+      {
+        "position_ms": 0,
+        "mode": "solid",
+        "color": "#0066FF",
+        "speed": null
+      },
+      {
+        "position_ms": 1,
+        "mode": "solid",
+        "color": "#0066FF",
+        "speed": null
+      },
+      {
+        "position_ms": 4999,
+        "mode": "solid",
+        "color": "#0066FF",
+        "speed": null
+      },
+      {
+        "position_ms": 5000,
+        "mode": "breathing",
+        "color": "#AA55FF",
+        "speed": 5
+      },
+      {
+        "position_ms": 9999,
+        "mode": "breathing",
+        "color": "#AA55FF",
+        "speed": 5
+      },
+      {
+        "position_ms": 10000,
+        "mode": "flash",
+        "color": "#FF0055",
+        "speed": 6
+      },
+      {
+        "position_ms": 14999,
+        "mode": "flash",
+        "color": "#FF0055",
+        "speed": 6
+      },
+      {
+        "position_ms": 15000,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      }
+    ]
+  },
+  {
+    "sheet": {
+      "version": 1,
+      "fps": {
+        "numerator": 30000,
+        "denominator": 1001
+      },
+      "start_frame": 108000,
+      "timecode_start": "01:00:00;00",
+      "timeline_name": "NTSC",
+      "duration_frames": 8,
+      "cues": [
+        {
+          "start_frame": 0,
+          "end_frame": 1,
+          "mode": "solid",
+          "color": "#0066FF",
+          "brightness": 100
+        },
+        {
+          "start_frame": 2,
+          "end_frame": 3,
+          "mode": "breathing",
+          "color": "#AA55FF",
+          "brightness": 33,
+          "speed": 255
+        },
+        {
+          "start_frame": 4,
+          "end_frame": 6,
+          "mode": "slow_flash",
+          "color": "#FF0055",
+          "brightness": 100
+        }
+      ]
+    },
+    "expected": [
+      {
+        "position_ms": 0,
+        "mode": "solid",
+        "color": "#0066FF",
+        "speed": null
+      },
+      {
+        "position_ms": 33,
+        "mode": "solid",
+        "color": "#0066FF",
+        "speed": null
+      },
+      {
+        "position_ms": 34,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 66,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 67,
+        "mode": "breathing",
+        "color": "#381C54",
+        "speed": 255
+      },
+      {
+        "position_ms": 100,
+        "mode": "breathing",
+        "color": "#381C54",
+        "speed": 255
+      },
+      {
+        "position_ms": 101,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 133,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 134,
+        "mode": "flash",
+        "color": "#FF0055",
+        "speed": 20
+      },
+      {
+        "position_ms": 200,
+        "mode": "flash",
+        "color": "#FF0055",
+        "speed": 20
+      },
+      {
+        "position_ms": 201,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 267,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      }
+    ]
+  },
+  {
+    "sheet": {
+      "version": 1,
+      "fps": {
+        "numerator": 60,
+        "denominator": 1
+      },
+      "start_frame": 0,
+      "timecode_start": "00:00:00:00",
+      "timeline_name": "Gradient",
+      "duration_frames": 8,
+      "cues": [
+        {
+          "start_frame": 0,
+          "end_frame": 1,
+          "mode": "solid",
+          "color": "#010305",
+          "brightness": 50
+        },
+        {
+          "start_frame": 1,
+          "end_frame": 5,
+          "mode": "gradient",
+          "color": "#010203",
+          "brightness": 37,
+          "end_color": "#FEFDFC"
+        },
+        {
+          "start_frame": 5,
+          "end_frame": 6,
+          "mode": "off",
+          "color": "#000000",
+          "brightness": 100
+        }
+      ]
+    },
+    "expected": [
+      {
+        "position_ms": 0,
+        "mode": "solid",
+        "color": "#010203",
+        "speed": null
+      },
+      {
+        "position_ms": 16,
+        "mode": "solid",
+        "color": "#010203",
+        "speed": null
+      },
+      {
+        "position_ms": 17,
+        "mode": "solid",
+        "color": "#010101",
+        "speed": null
+      },
+      {
+        "position_ms": 25,
+        "mode": "solid",
+        "color": "#0C0C0D",
+        "speed": null
+      },
+      {
+        "position_ms": 33,
+        "mode": "solid",
+        "color": "#171718",
+        "speed": null
+      },
+      {
+        "position_ms": 42,
+        "mode": "solid",
+        "color": "#242424",
+        "speed": null
+      },
+      {
+        "position_ms": 50,
+        "mode": "solid",
+        "color": "#2F2F2F",
+        "speed": null
+      },
+      {
+        "position_ms": 66,
+        "mode": "solid",
+        "color": "#464645",
+        "speed": null
+      },
+      {
+        "position_ms": 83,
+        "mode": "solid",
+        "color": "#5E5D5D",
+        "speed": null
+      },
+      {
+        "position_ms": 84,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 99,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 100,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      }
+    ]
+  },
+  {
+    "sheet": {
+      "version": 1,
+      "fps": {
+        "numerator": 25,
+        "denominator": 1
+      },
+      "start_frame": 0,
+      "timecode_start": "00:00:00:00",
+      "timeline_name": "Native parameters",
+      "duration_frames": 5,
+      "cues": [
+        {
+          "start_frame": 0,
+          "end_frame": 1,
+          "mode": "fast_flash",
+          "color": "#112233",
+          "brightness": 100
+        },
+        {
+          "start_frame": 1,
+          "end_frame": 2,
+          "mode": "breathing",
+          "color": "#445566",
+          "brightness": 100
+        },
+        {
+          "start_frame": 2,
+          "end_frame": 3,
+          "mode": "flash",
+          "color": "#102030",
+          "brightness": 100,
+          "speed": 1
+        },
+        {
+          "start_frame": 3,
+          "end_frame": 4,
+          "mode": "slow_flash",
+          "color": "#ABCDEF",
+          "brightness": 100,
+          "speed": 255
+        },
+        {
+          "start_frame": 4,
+          "end_frame": 5,
+          "mode": "breathing",
+          "color": "#ABCDEF",
+          "brightness": 0
+        }
+      ]
+    },
+    "expected": [
+      {
+        "position_ms": 0,
+        "mode": "flash",
+        "color": "#112233",
+        "speed": 6
+      },
+      {
+        "position_ms": 39,
+        "mode": "flash",
+        "color": "#112233",
+        "speed": 6
+      },
+      {
+        "position_ms": 40,
+        "mode": "breathing",
+        "color": "#445566",
+        "speed": 5
+      },
+      {
+        "position_ms": 79,
+        "mode": "breathing",
+        "color": "#445566",
+        "speed": 5
+      },
+      {
+        "position_ms": 80,
+        "mode": "flash",
+        "color": "#102030",
+        "speed": 1
+      },
+      {
+        "position_ms": 119,
+        "mode": "flash",
+        "color": "#102030",
+        "speed": 1
+      },
+      {
+        "position_ms": 120,
+        "mode": "flash",
+        "color": "#ABCDEF",
+        "speed": 255
+      },
+      {
+        "position_ms": 159,
+        "mode": "flash",
+        "color": "#ABCDEF",
+        "speed": 255
+      },
+      {
+        "position_ms": 160,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 199,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 200,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      }
+    ]
+  },
+  {
+    "sheet": {
+      "version": 1,
+      "fps": {
+        "numerator": 24,
+        "denominator": 1
+      },
+      "start_frame": 0,
+      "timecode_start": "00:00:00:00",
+      "timeline_name": "Blank",
+      "duration_frames": 24,
+      "cues": []
+    },
+    "expected": [
+      {
+        "position_ms": 0,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 999,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      },
+      {
+        "position_ms": 1000,
+        "mode": "solid",
+        "color": "#000000",
+        "speed": null
+      }
+    ]
+  }
+]
